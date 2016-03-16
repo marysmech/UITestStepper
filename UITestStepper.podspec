@@ -1,4 +1,5 @@
-ure to run `pod spec lint UITestStepper.podspec' to ensure this is a
+#
+#  Be sure to run `pod spec lint UITestStepper.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -53,7 +54,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "Marek Mechura" => "marysmech@gmail.com" }
   # Or just: s.author    = "Marek Mechura"
-  # s.authors            = { "Marek Mechura" => "marysmech@gmail.com" }
+  # s.authors            = { "Marek Mechura" => "marysmech@gmail.com" }
   # s.social_media_url   = "http://twitter.com/Marek Mechura"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
