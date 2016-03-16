@@ -10,6 +10,7 @@
 		65353D721C995486003D63FA /* UITestStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = 65353D711C995486003D63FA /* UITestStepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65353D791C995486003D63FA /* UITestStepper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65353D6E1C995486003D63FA /* UITestStepper.framework */; };
 		65353D7E1C995486003D63FA /* UITestStepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65353D7D1C995486003D63FA /* UITestStepperTests.swift */; };
+		65353D891C9954DA003D63FA /* UITestStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65353D881C9954DA003D63FA /* UITestStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		65353D781C995486003D63FA /* UITestStepperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestStepperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65353D7D1C995486003D63FA /* UITestStepperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestStepperTests.swift; sourceTree = "<group>"; };
 		65353D7F1C995486003D63FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65353D881C9954DA003D63FA /* UITestStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				65353D711C995486003D63FA /* UITestStepper.h */,
 				65353D731C995486003D63FA /* Info.plist */,
+				65353D881C9954DA003D63FA /* UITestStepper.swift */,
 			);
 			path = UITestStepper;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65353D891C9954DA003D63FA /* UITestStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 		65353D831C995486003D63FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bumola.UITestStepper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		65353D841C995486003D63FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
